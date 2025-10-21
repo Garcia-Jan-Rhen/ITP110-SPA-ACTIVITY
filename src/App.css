@@ -1,0 +1,139 @@
+.App {
+  min-height: 100vh;
+  background: #f8f6f0; /* Light warm beige background */
+}
+
+main {
+  padding-top: 80px; /* Account for fixed header */
+}
+
+/* Custom coffee shop styling */
+.coffee-bg {
+  background: linear-gradient(135deg, #6B4423 0%, #8B4513 50%, #A0522D 100%);
+  position: relative;
+}
+
+.coffee-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="8" fill="%23D2B48C" opacity="0.1"/><circle cx="80" cy="30" r="12" fill="%23DEB887" opacity="0.1"/><circle cx="50" cy="70" r="15" fill="%23F5DEB3" opacity="0.1"/></svg>');
+  background-size: 200px 200px;
+}
+
+.hero-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.coffee-card {
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(139, 69, 19, 0.1);
+}
+
+.coffee-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #6B4423 !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #6B4423 !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #8B4513 !important;
+}
+
+.btn-coffee {
+  background: linear-gradient(45deg, #6B4423, #8B4513);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(107, 68, 35, 0.3);
+}
+
+.btn-coffee:hover {
+  background: linear-gradient(45deg, #8B4513, #A0522D);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(107, 68, 35, 0.4);
+  color: white;
+}
+
+.section-title {
+  color: #6B4423;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.menu-item {
+  border-left: 4px solid #8B4513;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.menu-item h5 {
+  color: #6B4423;
+  font-weight: bold;
+}
+
+.menu-price {
+  color: #8B4513;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Improved text contrast */
+.text-muted {
+  color: #6c757d !important;
+}
+
+/* Better card contrast */
+.coffee-card h3, .coffee-card h4, .coffee-card h5 {
+  color: #6B4423;
+}
+
+.coffee-card p {
+  color: #495057;
+}
+
+/* Hero section text improvements */
+.hero-section h1 {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-section p {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Fix specialties section text contrast */
+.coffee-card h6 {
+  color: #6B4423 !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+}
+
+.coffee-card h3 {
+  color: #6B4423 !important;
+  font-weight: bold !important;
+}
