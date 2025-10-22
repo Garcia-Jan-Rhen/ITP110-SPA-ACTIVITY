@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -36,6 +37,7 @@ function App() {
             </Routes>
           </main>
         </div>
+        <Analytics />
       </Router>
     </CartProvider>
   );
