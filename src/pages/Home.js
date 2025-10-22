@@ -7,7 +7,7 @@ const Home = () => {
       <div className="hero-section">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6 fade-in">
               <h1 className="display-4 fw-bold mb-4">
                 Welcome to KOPI
               </h1>
@@ -24,7 +24,7 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 slide-in-right">
               <div className="text-center">
                 <div className="coffee-card p-5">
                   <h3 className="text-center mb-4">☕ Our Specialties</h3>
@@ -65,21 +65,21 @@ const Home = () => {
       <div className="py-5 bg-white">
         <div className="container">
           <div className="row text-center">
-            <div className="col-md-4 mb-4">
+            <div className="col-md-4 mb-4 fade-in">
               <div className="coffee-card p-4 h-100">
                 <div className="fs-1 mb-3">🌱</div>
                 <h5>Fresh Beans</h5>
                 <p>Premium coffee beans sourced from the finest regions around the world.</p>
               </div>
             </div>
-            <div className="col-md-4 mb-4">
+            <div className="col-md-4 mb-4 fade-in" style={{animationDelay: '0.2s'}}>
               <div className="coffee-card p-4 h-100">
                 <div className="fs-1 mb-3">👨‍🍳</div>
                 <h5>Expert Baristas</h5>
                 <p>Skilled baristas crafting your perfect cup with precision and care.</p>
               </div>
             </div>
-            <div className="col-md-4 mb-4">
+            <div className="col-md-4 mb-4 fade-in" style={{animationDelay: '0.4s'}}>
               <div className="coffee-card p-4 h-100">
                 <div className="fs-1 mb-3">🏠</div>
                 <h5>Cozy Atmosphere</h5>

@@ -6,12 +6,12 @@ const About = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">
-            <div className="text-center mb-5">
+            <div className="text-center mb-5 fade-in">
               <h1 className="section-title">About KOPI</h1>
               <p className="lead">Our story of passion, quality, and community</p>
             </div>
             
-            <div className="coffee-card p-5 mb-5">
+            <div className="coffee-card p-5 mb-5 slide-in-left">
               <h3 className="text-center mb-4">Our Story</h3>
               <p className="lead">
                 Founded in 2020, KOPI began as a small dream to bring exceptional coffee 
@@ -28,7 +28,7 @@ const About = () => {
             </div>
 
             <div className="row">
-              <div className="col-md-6 mb-4">
+              <div className="col-md-6 mb-4 fade-in">
                 <div className="coffee-card p-4 h-100">
                   <h4 className="text-center mb-3">🌍 Our Mission</h4>
                   <p>
@@ -38,7 +38,7 @@ const About = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-6 mb-4">
+              <div className="col-md-6 mb-4 fade-in" style={{animationDelay: '0.2s'}}>
                 <div className="coffee-card p-4 h-100">
                   <h4 className="text-center mb-3">⭐ Our Values</h4>
                   <ul className="list-unstyled">
@@ -55,21 +55,21 @@ const About = () => {
             <div className="coffee-card p-5 mt-5">
               <h3 className="text-center mb-4">Meet Our Team</h3>
               <div className="row">
-                <div className="col-md-4 text-center mb-4">
+                <div className="col-md-4 text-center mb-4 team-member">
                   <div className="fs-1 mb-3">👨‍🍳</div>
-                  <h5>Alex Chen</h5>
+                  <h5>Juan Miguel Larios</h5>
                   <p className="text-muted">Head Barista</p>
                   <small>5+ years of coffee expertise</small>
                 </div>
-                <div className="col-md-4 text-center mb-4">
+                <div className="col-md-4 text-center mb-4 team-member">
                   <div className="fs-1 mb-3">👩‍🍳</div>
-                  <h5>Maria Rodriguez</h5>
+                  <h5>Kharl Angelo Dumangas</h5>
                   <p className="text-muted">Pastry Chef</p>
                   <small>Artisan baker with 8+ years experience</small>
                 </div>
-                <div className="col-md-4 text-center mb-4">
+                <div className="col-md-4 text-center mb-4 team-member">
                   <div className="fs-1 mb-3">👨‍💼</div>
-                  <h5>David Kim</h5>
+                  <h5>Andrei Asnan</h5>
                   <p className="text-muted">Manager</p>
                   <small>Customer service excellence</small>
                 </div>
