@@ -213,29 +213,9 @@ main {
 .nav-link.active {
   color: #8B4513 !important;
   font-weight: 600 !important;
-  position: relative;
-}
-
-.nav-link.active::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 2px;
-  background: linear-gradient(45deg, #8B4513, #A0522D);
-  border-radius: 1px;
-  animation: underlineGrow 0.3s ease;
-}
-
-@keyframes underlineGrow {
-  from {
-    width: 0;
-  }
-  to {
-    width: 30px;
-  }
+  text-decoration: underline !important;
+  text-decoration-color: #8B4513 !important;
+  text-decoration-thickness: 2px !important;
 }
 
 /* Hover effects for navigation */
