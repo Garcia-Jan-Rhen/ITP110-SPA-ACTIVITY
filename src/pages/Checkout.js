@@ -299,7 +299,7 @@ const Checkout = () => {
               {items.map((item) => (
                 <div key={item.id} className="d-flex justify-content-between mb-2">
                   <span>{item.name} x{item.quantity}</span>
-                  <span>${(parseFloat(item.price.replace('$', '')) * item.quantity).toFixed(2)}</span>
+                  <span>₱{(parseFloat(item.price.replace('₱', '')) * item.quantity).toFixed(0)}</span>
                 </div>
               ))}
               
@@ -307,24 +307,24 @@ const Checkout = () => {
               
               <div className="d-flex justify-content-between mb-2">
                 <span>Subtotal:</span>
-                <span>${getTotalPrice().toFixed(2)}</span>
+                <span>₱{getTotalPrice().toFixed(0)}</span>
               </div>
               
               <div className="d-flex justify-content-between mb-2">
                 <span>Tax (8.5%):</span>
-                <span>${(getTotalPrice() * 0.085).toFixed(2)}</span>
+                <span>₱{(getTotalPrice() * 0.085).toFixed(0)}</span>
               </div>
               
               <div className="d-flex justify-content-between mb-2">
                 <span>Service Fee:</span>
-                <span>$2.00</span>
+                <span>₱100</span>
               </div>
               
               <hr />
               
               <div className="d-flex justify-content-between mb-4">
                 <strong>Total:</strong>
-                <strong className="menu-price">${total.toFixed(2)}</strong>
+                <strong className="menu-price">₱{total.toFixed(0)}</strong>
               </div>
 
               <div className="alert alert-info">

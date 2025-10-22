@@ -7,32 +7,32 @@ const Menu = () => {
 
   const menuItems = {
     coffee: [
-      { id: 'coffee-1', name: 'Espresso', description: 'Rich, bold, and perfectly extracted', price: '$3.50' },
-      { id: 'coffee-2', name: 'Americano', description: 'Espresso with hot water for a smooth taste', price: '$4.00' },
-      { id: 'coffee-3', name: 'Latte', description: 'Espresso with steamed milk and foam', price: '$4.50' },
-      { id: 'coffee-4', name: 'Cappuccino', description: 'Equal parts espresso, steamed milk, and foam', price: '$4.50' },
-      { id: 'coffee-5', name: 'Mocha', description: 'Espresso with chocolate and steamed milk', price: '$5.00' },
-      { id: 'coffee-6', name: 'Cold Brew', description: 'Smooth, refreshing cold-brewed coffee', price: '$4.00' },
-      { id: 'coffee-7', name: 'Iced Coffee', description: 'Freshly brewed coffee served over ice', price: '$3.50' }
+      { id: 'coffee-1', name: 'Espresso', description: 'Rich, bold, and perfectly extracted', price: '₱175' },
+      { id: 'coffee-2', name: 'Americano', description: 'Espresso with hot water for a smooth taste', price: '₱200' },
+      { id: 'coffee-3', name: 'Latte', description: 'Espresso with steamed milk and foam', price: '₱225' },
+      { id: 'coffee-4', name: 'Cappuccino', description: 'Equal parts espresso, steamed milk, and foam', price: '₱225' },
+      { id: 'coffee-5', name: 'Mocha', description: 'Espresso with chocolate and steamed milk', price: '₱250' },
+      { id: 'coffee-6', name: 'Cold Brew', description: 'Smooth, refreshing cold-brewed coffee', price: '₱200' },
+      { id: 'coffee-7', name: 'Iced Coffee', description: 'Freshly brewed coffee served over ice', price: '₱175' }
     ],
     tea: [
-      { id: 'tea-1', name: 'Green Tea', description: 'Light and refreshing traditional green tea', price: '$3.00' },
-      { id: 'tea-2', name: 'Chai Latte', description: 'Spiced tea with steamed milk', price: '$4.50' },
-      { id: 'tea-3', name: 'Earl Grey', description: 'Classic bergamot-scented black tea', price: '$3.50' },
-      { id: 'tea-4', name: 'Herbal Tea', description: 'Selection of caffeine-free herbal blends', price: '$3.00' }
+      { id: 'tea-1', name: 'Green Tea', description: 'Light and refreshing traditional green tea', price: '₱150' },
+      { id: 'tea-2', name: 'Chai Latte', description: 'Spiced tea with steamed milk', price: '₱225' },
+      { id: 'tea-3', name: 'Earl Grey', description: 'Classic bergamot-scented black tea', price: '₱175' },
+      { id: 'tea-4', name: 'Herbal Tea', description: 'Selection of caffeine-free herbal blends', price: '₱150' }
     ],
     pastries: [
-      { id: 'pastry-1', name: 'Croissant', description: 'Buttery, flaky French pastry', price: '$3.50' },
-      { id: 'pastry-2', name: 'Muffin', description: 'Freshly baked daily - various flavors', price: '$3.00' },
-      { id: 'pastry-3', name: 'Danish', description: 'Sweet pastry with fruit filling', price: '$4.00' },
-      { id: 'pastry-4', name: 'Bagel & Cream Cheese', description: 'Fresh bagel with cream cheese', price: '$4.50' },
-      { id: 'pastry-5', name: 'Scone', description: 'Traditional British pastry', price: '$3.50' }
+      { id: 'pastry-1', name: 'Croissant', description: 'Buttery, flaky French pastry', price: '₱175' },
+      { id: 'pastry-2', name: 'Muffin', description: 'Freshly baked daily - various flavors', price: '₱150' },
+      { id: 'pastry-3', name: 'Danish', description: 'Sweet pastry with fruit filling', price: '₱200' },
+      { id: 'pastry-4', name: 'Bagel & Cream Cheese', description: 'Fresh bagel with cream cheese', price: '₱225' },
+      { id: 'pastry-5', name: 'Scone', description: 'Traditional British pastry', price: '₱175' }
     ],
     food: [
-      { id: 'food-1', name: 'Avocado Toast', description: 'Smashed avocado on artisan bread', price: '$8.50' },
-      { id: 'food-2', name: 'Breakfast Sandwich', description: 'Egg, cheese, and choice of meat', price: '$7.50' },
-      { id: 'food-3', name: 'Quiche', description: 'Daily selection of savory quiches', price: '$6.50' },
-      { id: 'food-4', name: 'Salad Bowl', description: 'Fresh mixed greens with seasonal toppings', price: '$9.00' }
+      { id: 'food-1', name: 'Avocado Toast', description: 'Smashed avocado on artisan bread', price: '₱425' },
+      { id: 'food-2', name: 'Breakfast Sandwich', description: 'Egg, cheese, and choice of meat', price: '₱375' },
+      { id: 'food-3', name: 'Quiche', description: 'Daily selection of savory quiches', price: '₱325' },
+      { id: 'food-4', name: 'Salad Bowl', description: 'Fresh mixed greens with seasonal toppings', price: '₱450' }
     ]
   };
 

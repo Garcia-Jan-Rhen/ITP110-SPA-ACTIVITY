@@ -77,7 +77,7 @@ const Cart = () => {
                   </div>
                   <div className="col-md-2 text-end">
                     <span className="menu-price">
-                      ${(parseFloat(item.price.replace('$', '')) * item.quantity).toFixed(2)}
+₱{(parseFloat(item.price.replace('₱', '')) * item.quantity).toFixed(0)}
                     </span>
                   </div>
                 </div>
@@ -91,24 +91,24 @@ const Cart = () => {
               
               <div className="d-flex justify-content-between mb-2">
                 <span>Subtotal ({getTotalItems()} items):</span>
-                <span>${getTotalPrice().toFixed(2)}</span>
+                <span>₱{getTotalPrice().toFixed(0)}</span>
               </div>
               
               <div className="d-flex justify-content-between mb-2">
                 <span>Tax (8.5%):</span>
-                <span>${(getTotalPrice() * 0.085).toFixed(2)}</span>
+                <span>₱{(getTotalPrice() * 0.085).toFixed(0)}</span>
               </div>
               
               <div className="d-flex justify-content-between mb-2">
                 <span>Service Fee:</span>
-                <span>$2.00</span>
+                <span>₱100</span>
               </div>
               
               <hr />
               
               <div className="d-flex justify-content-between mb-4">
                 <strong>Total:</strong>
-                <strong className="menu-price">${(getTotalPrice() + (getTotalPrice() * 0.085) + 2.00).toFixed(2)}</strong>
+                <strong className="menu-price">₱{(getTotalPrice() + (getTotalPrice() * 0.085) + 100).toFixed(0)}</strong>
               </div>
 
               <div className="d-grid gap-2">

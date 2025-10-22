@@ -70,7 +70,7 @@ export const CartProvider = ({ children }) => {
 
   const getTotalPrice = () => {
     return state.items.reduce((total, item) => {
-      const price = parseFloat(item.price.replace('$', ''));
+      const price = parseFloat(item.price.replace('₱', ''));
       return total + (price * item.quantity);
     }, 0);
   };
