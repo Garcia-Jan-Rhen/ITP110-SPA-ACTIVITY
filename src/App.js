@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { initGA, trackPageView } from './utils/analytics';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -20,6 +21,11 @@ import NotFound from './pages/NotFound';
 import { CartProvider } from './context/CartContext';
 
 function App() {
+  useEffect(() => {
+    // Initialize Google Analytics
+    initGA();
+  }, []);
+
   return (
     <CartProvider>
       <Router>
