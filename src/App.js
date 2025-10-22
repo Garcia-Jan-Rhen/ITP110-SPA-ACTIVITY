@@ -40,6 +40,11 @@ function App() {
         </div>
         <Analytics />
         <SpeedInsights />
+        {process.env.NODE_ENV === 'development' && (
+          <div style={{position: 'fixed', bottom: '10px', right: '10px', background: 'rgba(0,0,0,0.8)', color: 'white', padding: '5px', fontSize: '12px', zIndex: 9999}}>
+            Analytics: Loaded
+          </div>
+        )}
       </Router>
     </CartProvider>
   );
